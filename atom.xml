@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yanzeyu9262.github.io/"/>
-  <updated>2018-10-07T08:12:09.561Z</updated>
+  <updated>2018-10-19T08:08:57.450Z</updated>
   <id>https://yanzeyu9262.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用mame模拟器</title>
+    <link href="https://yanzeyu9262.github.io/2018/10/19/UsingMame/"/>
+    <id>https://yanzeyu9262.github.io/2018/10/19/UsingMame/</id>
+    <published>2018-10-19T06:08:38.000Z</published>
+    <updated>2018-10-19T08:08:57.450Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>有一天中午和同事一起吃完饭之后聊起了儿时玩过的游戏，想到了拳皇、街霸、双截龙、热血系列等等，种种回忆历历在目，所以有了重温哪些游戏的想法。上网搜索之后选择了mame，mame是一个功能强大的模拟器，当然真正用起来的时候还是遇到了一些问题，主要是bios缺失。<br>最近换了manjaro系统，我的安装都是基于此系统的。</p><h2 id="安装mame"><a href="#安装mame" class="headerlink" title="安装mame"></a>安装mame</h2><ul><li><p>Manjaro安装mame，直接用pacman命令安装最新的软件，我安装的版本是0.202.</p><pre><code>sudo pacman -Sy mame</code></pre></li></ul><blockquote><p>其实这不是太好的方式，会导致bois的缺失。也就是我之后遇到的问题。比较好的方式在一个英文网站有介绍，网站链接：<a href="https://journalxtra.com/mame/download-complete-sets-of-mess-and-mame-roms/" target="_blank" rel="noopener">https://journalxtra.com/mame/download-complete-sets-of-mess-and-mame-roms/</a>。</p></blockquote><h2 id="安装rom"><a href="#安装rom" class="headerlink" title="安装rom"></a>安装rom</h2><ul><li><p>下载 rom网站还是挺好找的，但是合集好少。推荐一个网址：<a href="http://www.mamecn.com/" target="_blank" rel="noopener">街机中国 http://www.mamecn.com/</a>。</p></li><li><p>移动下载好的文件一般是*.zip，到mame的roms目录。我的目录是：~/.mame/roms</p><pre><code>sudo cp ~/Download/kof98.zip ~/.mame/roms</code></pre></li><li><p>运行mame选择相应游戏就可以玩耍了。或者命令行执行</p><pre><code>mame kof98</code></pre></li></ul><blockquote><p>不幸的是在运行kof98的时候报错了，当时没有截图就不放了，但是大意就是缺少[neogeo]。google了好久最后还是在街机中国找到了我需要的包。论坛地址：<a href="http://bbs.mamecn.com/viewthread.php?tid=17786" target="_blank" rel="noopener">0.202 Bios</a>。<br>另外附上我下载的包<a href="mame_202_bios.7z">mame_202_bios.7z</a>。</p></blockquote><ul><li>将上边下载的bios包也解压到~/.mame/roms,就可以正常游戏了。</li></ul><h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>配置手柄的时候可以在进入到游戏时按tab呼出配置菜单，可以设置通用配置也可以对每个游戏单独设置，重置配置的话直接删除”/.mame/cfg/“目录下的对应配置就ok了（default配置是全局配置）。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;有一天中午和同事一起吃完饭之后聊起了儿时玩过的游戏，想到了拳皇、街霸、双截龙、热血系列等等，种种回忆历历在目，所以有了重温哪些游戏的想法。上
+      
+    
+    </summary>
+    
+      <category term="经历记录" scheme="https://yanzeyu9262.github.io/categories/%E7%BB%8F%E5%8E%86%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="mame" scheme="https://yanzeyu9262.github.io/tags/mame/"/>
+    
+      <category term="game" scheme="https://yanzeyu9262.github.io/tags/game/"/>
+    
+  </entry>
   
   <entry>
     <title>微信相亲吐槽</title>
@@ -126,11 +153,11 @@
       <category term="序言" scheme="https://yanzeyu9262.github.io/categories/%E5%BA%8F%E8%A8%80/"/>
     
     
-      <category term="GitHub" scheme="https://yanzeyu9262.github.io/tags/GitHub/"/>
-    
       <category term="Hexo" scheme="https://yanzeyu9262.github.io/tags/Hexo/"/>
     
       <category term="Blog" scheme="https://yanzeyu9262.github.io/tags/Blog/"/>
+    
+      <category term="GitHub" scheme="https://yanzeyu9262.github.io/tags/GitHub/"/>
     
   </entry>
   
