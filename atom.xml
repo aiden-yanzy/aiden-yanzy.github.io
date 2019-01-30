@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yanzeyu9262.github.io/"/>
-  <updated>2018-10-19T08:08:57.450Z</updated>
+  <updated>2018-10-19T08:46:00.844Z</updated>
   <id>https://yanzeyu9262.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用信息速查手册</title>
+    <link href="https://yanzeyu9262.github.io/2018/10/19/handbook/"/>
+    <id>https://yanzeyu9262.github.io/2018/10/19/handbook/</id>
+    <published>2018-10-19T08:32:13.000Z</published>
+    <updated>2018-10-19T08:46:00.844Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>记录一些常用的地址，或者小知识等,以便以后查询使用。</p><h2 id="Git相关"><a href="#Git相关" class="headerlink" title="Git相关"></a>Git相关</h2><ol><li><a href="https://git-lfs.github.com/" target="_blank" rel="noopener">Git Large File Storage</a> </li></ol><h2 id="markdown相关"><a href="#markdown相关" class="headerlink" title="markdown相关"></a>markdown相关</h2><ol><li><a href="https://hyxxsfwy.github.io/2016/01/15/Hexo-Markdown-%E7%AE%80%E6%98%8E%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C/" target="_blank" rel="noopener">Hexo Markdown 简明语法手册</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;记录一些常用的地址，或者小知识等,以便以后查询使用。&lt;/p&gt;
+&lt;h2 id=&quot;Git相关&quot;&gt;&lt;a href=&quot;#Git相关&quot; class=&quot;
+      
+    
+    </summary>
+    
+      <category term="速查手册" scheme="https://yanzeyu9262.github.io/categories/%E9%80%9F%E6%9F%A5%E6%89%8B%E5%86%8C/"/>
+    
+    
+      <category term="速查手册" scheme="https://yanzeyu9262.github.io/tags/%E9%80%9F%E6%9F%A5%E6%89%8B%E5%86%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>使用mame模拟器</title>
