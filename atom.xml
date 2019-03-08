@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yanzeyu9262.github.io/"/>
-  <updated>2018-10-19T08:46:00.844Z</updated>
+  <updated>2019-03-08T07:38:27.987Z</updated>
   <id>https://yanzeyu9262.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装vscode之后manjaro默认的资源管理器被替换</title>
+    <link href="https://yanzeyu9262.github.io/2019/03/08/20190308-file-manager-change/"/>
+    <id>https://yanzeyu9262.github.io/2019/03/08/20190308-file-manager-change/</id>
+    <published>2019-03-08T07:17:46.000Z</published>
+    <updated>2019-03-08T07:38:27.987Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近vscode这个编辑器很火，所以在自己的manjaro系统安装了一个，但是安装之后发现在chrome中下载了文件，选择在文件夹打开之后会进入到vscode中，删除vscode之后恢复正常。<br>网上搜索了一下终于找到了解决方案，亲测有效，现在记录一下。<br>首先是查看现在的资源管理器，在terminal中输入如下命令。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdg-mime query default inode/directory</span><br></pre></td></tr></table></figure></p><p>显示结果如下，果然是变成了vscode。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">visual-studio-code.desktop</span><br></pre></td></tr></table></figure></p><p>还原为manjaro的指令如下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xdg-mime default org.gnome.Nautilus.desktop inode/directory</span><br></pre></td></tr></table></figure></p><p>参照的文章地址为：<br><a href="https://blog.csdn.net/qq_32337527/article/details/81778732" target="_blank" rel="noopener">https://blog.csdn.net/qq_32337527/article/details/81778732</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近vscode这个编辑器很火，所以在自己的manjaro系统安装了一个，但是安装之后发现在chrome中下载了文件，选择在文件夹打开之后会进入到vscode中，删除vscode之后恢复正常。&lt;br&gt;网上搜索了一下终于找到了解决方案，亲测有效，现在记录一下。&lt;br&gt;首先是查
+      
+    
+    </summary>
+    
+      <category term="问题解决" scheme="https://yanzeyu9262.github.io/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+      <category term="manjaro" scheme="https://yanzeyu9262.github.io/tags/manjaro/"/>
+    
+      <category term="vscode" scheme="https://yanzeyu9262.github.io/tags/vscode/"/>
+    
+      <category term="文件系统， linux" scheme="https://yanzeyu9262.github.io/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%EF%BC%8C-linux/"/>
+    
+  </entry>
   
   <entry>
     <title>常用信息速查手册</title>
