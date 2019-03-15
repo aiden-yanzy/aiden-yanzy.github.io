@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yanzeyu9262.github.io/"/>
-  <updated>2019-03-14T03:34:35.113Z</updated>
+  <updated>2019-03-15T10:23:50.848Z</updated>
   <id>https://yanzeyu9262.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hive工作拾遗20190314</title>
+    <link href="https://yanzeyu9262.github.io/2019/03/14/20190314-useing-hive/"/>
+    <id>https://yanzeyu9262.github.io/2019/03/14/20190314-useing-hive/</id>
+    <published>2019-03-14T07:21:17.000Z</published>
+    <updated>2019-03-15T10:23:50.848Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天写sql是用用到了“sum(b.user_gmv) OVER (ORDER BY b.user_gmv DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)”语法，在最开始是的时候，因为看到网上有博客写如果计算的是从第一行到当前行时加不加窗口的结果是一样的，所以我没有添加窗口“BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW”。然而我每次执行语句的时候，总是卡在reduce执行到78%的时候。后来添加了窗口，很快就跑过去了，看来是否添加窗口得出的结果虽然一致，但是过程不太一样呢。<br>具体的原因之后，在仔细研究一下吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;昨天写sql是用用到了“sum(b.user_gmv) OVER (ORDER BY b.user_gmv DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)”语法，在最开始是的时候，因为看到网上有博客写如果计算的是
+      
+    
+    </summary>
+    
+      <category term="工作记录" scheme="https://yanzeyu9262.github.io/categories/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95/"/>
+    
+    
+      <category term="hive" scheme="https://yanzeyu9262.github.io/tags/hive/"/>
+    
+      <category term="工作记录， 知识累积" scheme="https://yanzeyu9262.github.io/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BD%95%EF%BC%8C-%E7%9F%A5%E8%AF%86%E7%B4%AF%E7%A7%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>hive工作拾遗20190313</title>

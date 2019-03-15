@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hive工作拾遗20190314]]></title>
+    <url>%2F2019%2F03%2F14%2F20190314-useing-hive%2F</url>
+    <content type="text"><![CDATA[昨天写sql是用用到了“sum(b.user_gmv) OVER (ORDER BY b.user_gmv DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)”语法，在最开始是的时候，因为看到网上有博客写如果计算的是从第一行到当前行时加不加窗口的结果是一样的，所以我没有添加窗口“BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW”。然而我每次执行语句的时候，总是卡在reduce执行到78%的时候。后来添加了窗口，很快就跑过去了，看来是否添加窗口得出的结果虽然一致，但是过程不太一样呢。具体的原因之后，在仔细研究一下吧。]]></content>
+      <categories>
+        <category>工作记录</category>
+      </categories>
+      <tags>
+        <tag>hive</tag>
+        <tag>工作记录， 知识累积</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hive工作拾遗20190313]]></title>
     <url>%2F2019%2F03%2F13%2Fuseofhive20190313%2F</url>
     <content type="text"><![CDATA[今天开始工作重心切换到了数据统计方面，需要写hql生成统计表。由于hive执行的速度比较慢，加上想要记录工作收获，所以边工作边记录一下。 使用到的命令等 建立临时表,与sql类似 1create table_name as select col_a, col_b from origin_table where condition=true; 使用hive分析函数，sum() over(),没想到是从一个日文网站找到了例子。https://qiita.com/tlokweng/items/fc13dc30cc1aa28231c5 1234SELECT order_id, item, COUNT(*) OVER (PARTITION BY item) FROM test_orders ORDER BY order_id;select order_id, item, count(*) over (order by order_id) from test_orders;SELECT order_id, item, qty, SUM(qty) over (PARTITION BY item ORDER BY order_id) FROM test_orders;SELECT order_id, item, qty, SUM(qty) OVER (ORDER BY order_id ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) result FROM test_orders; 根据查询结果插入表12INSERT OVERWRITE TABLE schema_name.table_name SELECT column_names FROM source_schema_name.source_table_name; 今天跑的数，总是reduce到78%就进行不下去了，看来需要进行优化。]]></content>

@@ -74,7 +74,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT, Java, IT, GitHub" />
+  <meta name="keywords" content="hive,工作记录， 知识累积," />
 
 
 
@@ -87,16 +87,18 @@
 
 
 
-<meta name="description" content="记录生活点滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="翡翠梦境">
-<meta property="og:url" content="https://yanzeyu9262.github.io/archives/2019/index.html">
+<meta name="description" content="昨天写sql是用用到了“sum(b.user_gmv) OVER (ORDER BY b.user_gmv DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)”语法，在最开始是的时候，因为看到网上有博客写如果计算的是从第一行到当前行时加不加窗口的结果是一样的，所以我没有添加窗口“BETWEEN UNBOUNDED PRECEDING AND">
+<meta name="keywords" content="hive,工作记录， 知识累积">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hive工作拾遗20190314">
+<meta property="og:url" content="https://yanzeyu9262.github.io/2019/03/14/20190314-useing-hive/index.html">
 <meta property="og:site_name" content="翡翠梦境">
-<meta property="og:description" content="记录生活点滴">
+<meta property="og:description" content="昨天写sql是用用到了“sum(b.user_gmv) OVER (ORDER BY b.user_gmv DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)”语法，在最开始是的时候，因为看到网上有博客写如果计算的是从第一行到当前行时加不加窗口的结果是一样的，所以我没有添加窗口“BETWEEN UNBOUNDED PRECEDING AND">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-03-15T10:23:50.848Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="翡翠梦境">
-<meta name="twitter:description" content="记录生活点滴">
+<meta name="twitter:title" content="hive工作拾遗20190314">
+<meta name="twitter:description" content="昨天写sql是用用到了“sum(b.user_gmv) OVER (ORDER BY b.user_gmv DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)”语法，在最开始是的时候，因为看到网上有博客写如果计算的是从第一行到当前行时加不加窗口的结果是一样的，所以我没有添加窗口“BETWEEN UNBOUNDED PRECEDING AND">
 
 
 
@@ -126,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="https://yanzeyu9262.github.io/archives/2019/"/>
+  <link rel="canonical" href="https://yanzeyu9262.github.io/2019/03/14/20190314-useing-hive/"/>
 
 
 
 
 
-  <title>归档 | 翡翠梦境</title>
+  <title>hive工作拾遗20190314 | 翡翠梦境</title>
   
 
 
@@ -151,7 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband">
 		<a href="https://github.com/aiden-yanzy">
 			<img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png">
@@ -303,185 +305,206 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yanzeyu9262.github.io/2019/03/14/20190314-useing-hive/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="闫泽宇">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/yanzy.ico">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="翡翠梦境">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">hive工作拾遗20190314</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-14T15:21:17+08:00">
+                2019-03-14
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-15T18:23:50+08:00">
+                2019-03-15
+              </time>
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 10 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工作记录/" itemprop="url" rel="index">
+                    <span itemprop="name">工作记录</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/14/20190314-useing-hive/" itemprop="url">
-              
-                <span itemprop="name">hive工作拾遗20190314</span>
-              
-            </a>
-        
-      </h2>
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o">浏览数</i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-14T15:21:17+08:00"
-              content="2019-03-14" >
-          03-14
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/13/useofhive20190313/" itemprop="url">
-              
-                <span itemprop="name">hive工作拾遗20190313</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-13T11:25:16+08:00"
-              content="2019-03-13" >
-          03-13
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/08/planfor2019/" itemprop="url">
-              
-                <span itemprop="name">2019年度计划</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-08T15:45:28+08:00"
-              content="2019-03-08" >
-          03-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p>昨天写sql是用用到了“sum(b.user_gmv) OVER (ORDER BY b.user_gmv DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)”语法，在最开始是的时候，因为看到网上有博客写如果计算的是从第一行到当前行时加不加窗口的结果是一样的，所以我没有添加窗口“BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW”。然而我每次执行语句的时候，总是卡在reduce执行到78%的时候。后来添加了窗口，很快就跑过去了，看来是否添加窗口得出的结果虽然一致，但是过程不太一样呢。<br>具体的原因之后，在仔细研究一下吧。</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/08/20190308-file-manager-change/" itemprop="url">
-              
-                <span itemprop="name">安装vscode之后manjaro默认的资源管理器被替换</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-08T15:17:46+08:00"
-              content="2019-03-08" >
-          03-08
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    闫泽宇
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://yanzeyu9262.github.io/2019/03/14/20190314-useing-hive/" title="hive工作拾遗20190314">https://yanzeyu9262.github.io/2019/03/14/20190314-useing-hive/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hive/" rel="tag"># hive</a>
+          
+            <a href="/tags/工作记录，-知识累积/" rel="tag"># 工作记录， 知识累积</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/13/useofhive20190313/" rel="next" title="hive工作拾遗20190313">
+                <i class="fa fa-chevron-left"></i> hive工作拾遗20190313
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -489,6 +512,8 @@
 
 
           
+  
+
 
         </div>
         
@@ -745,6 +770,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
