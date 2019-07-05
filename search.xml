@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[设计模式总结]]></title>
+    <url>%2F2019%2F07%2F04%2Fdesign-pattern%2F</url>
+    <content type="text"><![CDATA[六大原则单一职责原则里氏替换原则依赖倒置原则接口隔离原则迪米特法则开闭原则 五大创建型模式：对类的实例化过程进行抽象，使对象的创建和使用分离单例模式工厂模式抽象工厂建造者模式原型模式 十一大行为型模式模板方法中介者模式命令模式责任链模式策略模式迭代器模式观察者模式状态模式备忘录模式解释器模式访问者模式 七大结构型模式适配器模式桥接模式组合模式装饰模式外观模式享源模式代理模式]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式，总结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[shell命令]]></title>
+    <url>%2F2019%2F06%2F20%2Fshell%2F</url>
+    <content type="text"><![CDATA[文件链接:ln命令基本用法1ln from to 这样会把from文件链接到to文件，from文件是原有的文件，to文件是新文件。添加链接之后会让文件的链接数+1，可以通过ls查看。 tips对于普通的链接来说，要保证是在同一个文件系统中，否则会报错。不同文件系统的之间建立链接，可以添加“-s”参数，建立符号链接。 其他用法1ln files directory 把多个文件的链接放到到某个目录中。 cut命令12cut -cchars filecut -dchars -ffields file -c：可以指定多个范围-d：指定分隔符-f：指定取分割之后的第几个filed paste命令123paste filespaste -dchars filespaste -s -d：指定分隔符-s：表示只从同一个文件中粘贴，如果只指定了一个文件，则将文件中所有的行合并到一行。 sed命令（stream editor）1sed command file]]></content>
+      <categories>
+        <category>shell</category>
+      </categories>
+      <tags>
+        <tag>shell</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[消息队列]]></title>
+    <url>%2F2019%2F06%2F20%2Fmessage-queue%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>review</category>
+      </categories>
+      <tags>
+        <tag>review</tag>
+        <tag>message_queue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《hive编程指南》阅读]]></title>
+    <url>%2F2019%2F05%2F28%2Fread-hive-bian-cheng-zhi-nan%2F</url>
+    <content type="text"><![CDATA[1.对于管理表（内部表）来说，我们在hive中对表的操作，会影响到对应的数据文件；而对于外表，只会修改hive存储的元数据，不会影响文件系统中的文件。2.alter table … touch 钩子操作没看明白 待查3.load data inpath ‘/path’ overwrite into table name 会移动文件的位置，需要写权限4.动态插入分区参数设置‘’’set hive.exec.dynamic.partition=true;set hive.exec.dynamic.partition.mode=nonstrict;set hive.exec.max.dynamic.partitions.pernode=1000;‘’’]]></content>
+      <categories>
+        <category>阅读</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+        <tag>心得</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hive工作拾遗20190314]]></title>
     <url>%2F2019%2F03%2F14%2F20190314-useing-hive%2F</url>
     <content type="text"><![CDATA[昨天写sql是用用到了“sum(b.user_gmv) OVER (ORDER BY b.user_gmv DESC ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)”语法，在最开始是的时候，因为看到网上有博客写如果计算的是从第一行到当前行时加不加窗口的结果是一样的，所以我没有添加窗口“BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW”。然而我每次执行语句的时候，总是卡在reduce执行到78%的时候。后来添加了窗口，很快就跑过去了，看来是否添加窗口得出的结果虽然一致，但是过程不太一样呢。具体的原因之后，在仔细研究一下吧。]]></content>
